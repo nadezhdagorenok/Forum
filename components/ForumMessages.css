@@ -1,26 +1,49 @@
 .ForumMessages{
+    align-self: center;
     width: 50vw;
-    height: 30vw;
+    height: 20vw;
     border: 1px solid red;
+    padding: 1vw;
+    margin-bottom: 1vw;
+
 }
-.formForum{
-    width: 45vw;
-    height: 28vw;
-    border: 1px solid green;
+.FormForum{
+    width: 50vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.InputBlock{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
 }
 
-.headerMessage, .textMessage{
-    font-size: 1.5em;
+.HeaderMessage, .TextMessage{
+    font-size: 1.1em;
+    align-self: flex-start;
 }
-.header-control, .message-control{
-    width: 30vw;
-    height: 5vw;
+.Header-control, .Message-control{
+    width: 40vw;
     background-color: aquamarine;
+    align-self: flex-end;
 }
-.sendButton{
+.Header-control {
+    height: 2vw;
+}
+.Message-control {
+    height: 7vw;
+}
+.SendButton{
     width: 7vw;
-    height: 5vw;
-    font-size: 1.2em;
+    height: 3vw;
+    font-size: 1.3em;
     background-color: darksalmon;
-
+    border-radius: 5px;
+    align-self: flex-end;
+    cursor: pointer;
 }
