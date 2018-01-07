@@ -4,16 +4,18 @@ import PropTypes from 'prop-types';
 import './ForumTitle.css';
 
 
-class ForumTitle extends React.Component {
+class ForumTitle extends React.PureComponent {
 
     static propTypes = {
         title: PropTypes.string.isRequired,
     };
 
     render() {
-        return <div className='ForumTitle'>{this.props.title}</div>;
+        console.log('Render ForumTitle');
+        return <div className='ForumTitle'>
+                   <h1>{this.props.title}</h1>
+               </div>;
     }
-
 }
 
 export default ForumTitle;
