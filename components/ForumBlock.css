@@ -1,3 +1,40 @@
 .ForumBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.HeaderMessageBlock{
+    border: 1px dashed black;
+    margin-bottom: 1vw;
+    padding: 0 1vw;
+}
+.MessageBlock{
+    width: 52vw;
+}
+.MessageBlock div:first-of-type{
+    border: 0;
+    height: 0;
+}
 
+.HeaderBlock{
+    padding: .5vw 0;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.MessageBlock{
+    padding: .5vw 0;
+    font-size: 1em;
+}
+.CountMessage{
+    align-self: center;
+    width: 50vw;
+    margin-top: 1vw;
+}
+.CountMessage span:last-of-type{
+    color: red;
+    font-size: 1.3em;
+}
+.CountMessage span:first-of-type{
+    font-style: italic;
 }
