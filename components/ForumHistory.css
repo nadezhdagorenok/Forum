@@ -1,0 +1,15 @@
+.HeaderMessageBlock{
+    border: 1px dashed black;
+    margin-bottom: 1vw;
+    padding: 0 1vw;
+
+}
+.MessageBlock{
+    width: 52vw;
+    padding: 1vw 0;
+}
+.HeaderBlock{
+    padding: 1vw 0;
+    font-weight: 800;
+    font-size: 1.2em;
+}
