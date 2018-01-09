@@ -31,16 +31,16 @@ class ForumMessages extends React.PureComponent {
         console.log('Render ForumMessages');
         return (
             <div className='ForumMessages'>
-                <form className='FormForum'>
+                <form className='FormForum' action='http://localhost:3000/messages' method='post'>
                     <div className='InputBlock'>
                         <label htmlFor='header' className='HeaderMessage'>Header</label>
-                        <input type='text' onChange={this.headerTextChange} id='header' className='Header-control' defaultValue={this.props.newHeader} placeholder="Type header" required autoFocus />
+                        <input type='text' onChange={this.headerTextChange} id='header' className='Header-control'  value={this.props.newHeader} placeholder="Type header" required autoFocus />
                     </div>
                     <div className='InputBlock'>
                         <label htmlFor='message' className='TextMessage'>Message</label>
-                        <textarea id='message' className='Message-control' defaultValue={this.props.newMessage} onChange={this.messageTextChange} placeholder='Type your message' maxLength='140' rows='7'/>
+                        <textarea id='message' className='Message-control'  value={this.props.newMessage} onChange={this.messageTextChange} placeholder='Type your message' maxLength='140' rows='7'/>
                     </div>
-                    <button className='SendButton' onClick={this.sendButton} type='button' >Send</button>
+                    <input className='SendButton' onClick={this.sendButton} type='submit' value='Send' />
                 </form>
             </div>
         )

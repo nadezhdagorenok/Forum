@@ -2,7 +2,7 @@
     align-self: center;
     width: 50vw;
     height: 20vw;
-    border: 1px solid red;
+    border: 1px solid cornflowerblue;
     padding: 1vw;
     margin-bottom: 1vw;
 
@@ -29,9 +29,11 @@
 }
 .Header-control, .Message-control{
     width: 40vw;
-    background-color: aquamarine;
     align-self: flex-end;
+    transition: all 0.30s ease-in-out;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
+
 .Header-control {
     height: 2vw;
 }
@@ -42,7 +44,7 @@
     width: 7vw;
     height: 3vw;
     font-size: 1.3em;
-    background-color: darksalmon;
+    background-color: cornflowerblue;
     border-radius: 5px;
     align-self: flex-end;
     cursor: pointer;

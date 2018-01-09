@@ -9,7 +9,6 @@ class ForumHistory extends React.PureComponent {
     static propTypes = {
         header: PropTypes.string.isRequired,
         message: PropTypes.string.isRequired,
-
     };
 
     render() {
